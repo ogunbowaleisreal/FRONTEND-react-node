@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.7",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.0",
+    "@tailwindcss/vite": "^4.1.7",
+    "axios": "^1.9.0",
+    "react-router-dom": "^7.6.0"
+  }
+}

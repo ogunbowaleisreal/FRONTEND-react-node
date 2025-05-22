@@ -4,6 +4,7 @@ import Login from './pages/login'
 import Register from './pages/register'
 import Notfound from './pages/notfound'
 import ProtectedRoute from './components/ProtectedRoute'
+import React from "react"
 
 function Registerlogout(){
     return <Register/>

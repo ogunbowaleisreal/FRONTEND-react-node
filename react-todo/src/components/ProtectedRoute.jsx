@@ -1,26 +1,11 @@
 import {Navigate, useNavigate} from 'react-router-dom';
 import api from '../api';
 import { useState, useEffect } from 'react';
-
+import React from 'react';
 
 function ProtectedRoute({children}){
 
         const [authorized, setauthorized] = useState(null)
-
-
-        const refreshtoken =async ()=>{
-            try{
-        const response = await api.get('/refresh')
-        if(response.status == 200){
-            setauthorized(true)
-            return
-        }
-        setauthorized(false)
-    }catch(err){
-        console.log(err)
-        setauthorized(false)
-    }
-}
 
     const auth= async ()=>{
         try{     
@@ -38,9 +23,7 @@ function ProtectedRoute({children}){
         setauthorized(false)
     }
     }
-
     useEffect(()=>{auth()},[])
-
 
         if(authorized == null){
         return <div> ......loading</div>
