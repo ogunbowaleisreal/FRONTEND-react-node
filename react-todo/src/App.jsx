@@ -11,16 +11,15 @@ function Registerlogout(){
 }
 
 function App() {
-  
+
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path = '/' element = {<ProtectedRoute> <Home/> </ProtectedRoute>}/>
         <Route path = '/login' element = {<Login/>}/>
         <Route path= '/register' element = {<Registerlogout/>}/>
-        <Route path= '/logout' element = {<Login/>}/>
         <Route path= '*' element = {<Notfound/>}/>
-
       </Routes>
     </BrowserRouter>
   )

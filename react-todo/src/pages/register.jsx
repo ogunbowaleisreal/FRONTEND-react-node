@@ -1,7 +1,8 @@
 import Form from "../components/form";
+import React from "react";
 function Register(){
     return (
-        <Form method = 'register' route = '/register'/>
+        <Form method = 'Register' route = '/register'/>
        )
 }
 
